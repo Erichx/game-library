@@ -1,0 +1,23 @@
+{
+  "name": "game-library",
+  "version": "1.0.0",
+  "description": "just a simple game library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erichx/game-library.git"
+  },
+  "keywords": [
+    "game",
+    "library"
+  ],
+  "author": "Erich C Perusso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erichx/game-library/issues"
+  },
+  "homepage": "https://github.com/Erichx/game-library#readme"
+}
