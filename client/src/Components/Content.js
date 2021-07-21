@@ -1,11 +1,13 @@
 import React from "react";
-import Game from "./Game";
+import Widget from "./Widget";
 
-export default function Content() {
+export default function Content(props) {
+  const { games } = props;
   return (
     <div>
-      Content
-      <Game />
+      {games.map((item, index) => {
+        return <Widget game={item} key={index} />;
+      })}
     </div>
   );
 }

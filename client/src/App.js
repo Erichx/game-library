@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "./Components/Header";
 import Content from "./Components/Content";
 
 const App = () => {
   //temporary data
-  const games = [
+
+  const [games, setGames] = useState([
     {
       name: "BEATS EX",
       description:
@@ -36,12 +37,12 @@ const App = () => {
       release: "",
       tags: ["android", "html", "flash", "ios"],
     },
-  ];
+  ]);
 
   return (
     <>
       <Header />
-      <Content />
+      <Content games={games} />
     </>
   );
 };
