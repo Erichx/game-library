@@ -5,8 +5,7 @@ import SelectType from "./SelectType";
 
 export default function Header() {
   return (
-    <div>
-      Header
+    <div className="header">
       <SelectSort />
       <SelectType />
     </div>

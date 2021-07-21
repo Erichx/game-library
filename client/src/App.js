@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Header from "./Components/Header";
 import Content from "./Components/Content";
+import Modal from "./Components/Modal";
 
 const App = () => {
   //temporary data
@@ -15,7 +16,7 @@ const App = () => {
       thumbnail: "/01.png",
       url: "beat-ex",
       release: "",
-      tags: ["android", "windows"],
+      tags: ["Popular"],
     },
     {
       name: "BACCARAT SUPREME",
@@ -25,7 +26,7 @@ const App = () => {
       thumbnail: "/02.png",
       url: "bacarrat-supreme",
       release: "",
-      tags: ["android", "html", "ios"],
+      tags: ["Coming soon", "Popular"],
     },
     {
       name: "LOOT OR BOOT",
@@ -35,7 +36,7 @@ const App = () => {
       thumbnail: "/03.png",
       url: "/loot-or-boot",
       release: "",
-      tags: ["android", "html", "flash", "ios"],
+      tags: ["Coming soon"],
     },
   ]);
 
@@ -43,6 +44,7 @@ const App = () => {
     <>
       <Header />
       <Content games={games} />
+      <Modal show="" toggle="" url="" />
     </>
   );
 };
