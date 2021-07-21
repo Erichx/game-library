@@ -1,0 +1,11 @@
+import React from "react";
+import Game from "./Game";
+
+export default function Content() {
+  return (
+    <div>
+      Content
+      <Game />
+    </div>
+  );
+}

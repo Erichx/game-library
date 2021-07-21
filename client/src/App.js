@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+
+import Header from "./Components/Header";
+import Content from "./Components/Content";
 
 const App = () => {
-  //temporary
-
+  //temporary data
   const games = [
     {
       name: "BEATS EX",
@@ -36,7 +38,12 @@ const App = () => {
     },
   ];
 
-  return <span>test</span>;
+  return (
+    <>
+      <Header />
+      <Content />
+    </>
+  );
 };
 
 export default App;
