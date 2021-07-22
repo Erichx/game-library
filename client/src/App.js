@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { GamesContext } from "./Context/GamesContext";
 import Header from "./Components/Header";
 import Content from "./Components/Content";
 import Modal from "./Components/Modal";
@@ -15,7 +15,7 @@ const App = () => {
       type: "SLOT GAMES",
       thumbnail: "/01.png",
       url: "beat-ex",
-      release: "",
+      release: "2017-10-12T00:00:00",
       tags: ["Popular"],
     },
     {
@@ -25,8 +25,8 @@ const App = () => {
       type: "SLOT GAMES",
       thumbnail: "/02.png",
       url: "bacarrat-supreme",
-      release: "",
-      tags: ["Coming soon", "Popular"],
+      release: "2021-04-04T00:00:00",
+      tags: [],
     },
     {
       name: "Loot or Boot",
@@ -35,16 +35,18 @@ const App = () => {
       type: "ARCADE",
       thumbnail: "/03.png",
       url: "/loot-or-boot",
-      release: "",
+      release: "2022-01-11T00:00:00",
       tags: ["Coming soon"],
     },
   ]);
 
   return (
     <>
-      <Header />
-      <Content games={games} />
-      <Modal show="" toggle="" url="" />
+      <GamesContext.Provider value={{ games, setGames }}>
+        <Header />
+        <Content games={games} />
+        <Modal show="" toggle="" url="" />
+      </GamesContext.Provider>
     </>
   );
 };

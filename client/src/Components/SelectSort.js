@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { GamesContext } from "../Context/GamesContext";
 
 export default function SelectSort() {
+  const { games, setGames } = useContext(GamesContext);
+
+  console.log("inside select sort", games);
+
   return (
     <div>
       <label htmlFor="sort">Sort</label>
