@@ -19,17 +19,17 @@ const App = () => {
       tags: ["Popular"],
     },
     {
-      name: "BACCARAT SUPREME",
+      name: "Wild Wild West 2120",
       description:
         "Suspendisse hendrerit diam ac auctor accumsan. Donec blandit metus a diam dictum egestas non non erat.",
-      type: "TABLE GAMES",
+      type: "SLOT GAMES",
       thumbnail: "/02.png",
       url: "bacarrat-supreme",
       release: "",
       tags: ["Coming soon", "Popular"],
     },
     {
-      name: "LOOT OR BOOT",
+      name: "Loot or Boot",
       description:
         "Curabitur quis sollicitudin odio. Vivamus varius sapien vitae ex lacinia efficitur. ",
       type: "ARCADE",
