@@ -9,17 +9,26 @@ const request = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida ex turpis, a maximus neque volutpat id.",
     type: "SLOT GAMES",
-    thumbnail: "/01.png",
+    thumbnail: "https://picsum.photos/id/22/200",
     url: "beat-ex",
     release: "Mon Oct 31 2021 00:00:00 GMT-0300",
-    tags: ["Popular"],
+    tags: ["popular"],
+  },
+  {
+    name: "Neon 2077",
+    description: "Pellentesque consequat ornare ex nec pellentesque. ",
+    type: "SLOT GAME",
+    thumbnail: "https://picsum.photos/id/12/200",
+    url: "/loot-or-boot",
+    release: "Mon Nov 29 2021 00:00:00 GMT-0300",
+    tags: ["coming soon"],
   },
   {
     name: "Wild Wild West 2120",
     description:
       "Suspendisse hendrerit diam ac auctor accumsan. Donec blandit metus a diam dictum egestas non non erat.",
     type: "SLOT GAMES",
-    thumbnail: "/02.png",
+    thumbnail: "https://picsum.photos/id/25/200",
     url: "bacarrat-supreme",
     release: "Mon Oct 22 2021 00:00:00 GMT-0300",
     tags: [],
@@ -29,10 +38,29 @@ const request = [
     description:
       "Curabitur quis sollicitudin odio. Vivamus varius sapien vitae ex lacinia efficitur. ",
     type: "ARCADE",
-    thumbnail: "/03.png",
+    thumbnail: "https://picsum.photos/id/43/200",
     url: "/loot-or-boot",
     release: "Mon Jan 25 2022 00:00:00 GMT-0300",
-    tags: ["Coming soon"],
+    tags: ["coming soon"],
+  },
+  {
+    name: "FLEXING DRAGONS",
+    description: " Duis posuere dui eu vulputate convallis",
+    type: "ARCADE",
+    thumbnail: "https://picsum.photos/id/75/200",
+    url: "bacarrat-supreme",
+    release: "Mon Feb 10 2018 00:00:00 GMT-0300",
+    tags: [],
+  },
+  {
+    name: "Wild Sorcery",
+    description:
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere",
+    type: "SLOT GAMES",
+    thumbnail: "https://picsum.photos/id/98/200",
+    url: "bacarrat-supreme",
+    release: "Mon Oct 22 2021 00:00:00 GMT-0300",
+    tags: [],
   },
 ];
 const App = () => {

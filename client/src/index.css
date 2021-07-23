@@ -1,8 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+p {
+  margin: 0.5rem 0rem;
+}
+
 .header {
 }
 
 .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .widget {
+  background: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  color: #4e4e4e;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.container-thumbnail {
+  position: sticky;
+}
+.widget > .container-thumbnail > .thumbnail {
+  height: 12rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.tag {
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 8px;
+  top: 1rem;
+  left: 1rem;
+  position: absolute;
+  color: #fff;
+}
+.popular {
+  background-color: #f4a600;
+}
+.comming-soon {
+  background-color: #780f74;
+}
+
+.widget-info {
+  padding: 1rem;
+}
+
+.widget-info .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*media query for different devices */
+@media (min-width: 576px) {
+  .widget {
+    width: 98%;
+    margin: 1%;
+  }
+}
+@media (min-width: 768px) {
+  .widget {
+    width: 45%;
+    margin: 2%;
+  }
+}
+@media (min-width: 992px) {
+  .widget {
+    width: 44%;
+    margin: 1%;
+  }
+}
+@media (min-width: 1200px) {
+  .widget {
+    width: 28%;
+    margin: 2%;
+  }
 }
