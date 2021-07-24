@@ -157,27 +157,27 @@ div.select-container select {
 }
 
 /*media query for different devices */
-@media (min-width: 576px) {
+@media (min-width: 200px) {
   .widget {
     width: 98%;
-    margin: 1%;
+    margin: 0.5rem;
   }
 }
 @media (min-width: 768px) {
   .widget {
     width: 45%;
-    margin: 2%;
+    margin: 0.5rem;
   }
 }
 @media (min-width: 992px) {
   .widget {
     width: 44%;
-    margin: 1%;
+    margin: 1rem;
   }
 }
 @media (min-width: 1200px) {
   .widget {
     width: 28%;
-    margin: 2%;
+    margin: 1rem;
   }
 }
