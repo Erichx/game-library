@@ -47,6 +47,10 @@ div.select-container select {
   color: #4e4e4e;
   font-size: 0.8rem;
   text-align: left;
+  transition: transform 0.4s;
+}
+.widget:hover {
+  transform: scale(1.04);
 }
 .container-thumbnail {
   position: sticky;
