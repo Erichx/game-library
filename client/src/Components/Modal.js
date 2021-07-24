@@ -1,16 +1,20 @@
 import React from "react";
 
 export default function Modal(props) {
-  const { show, toggle, url } = props;
+  const { url, setModal } = props;
   return (
-    <div className="background-modal">
+    <div className="background-modal" onClick={() => setModal("")}>
       <div className="modal">
         <div className="modal-header">
-          <div className="modal-close">
-            <img src="" onClick={() => toggle(!show)} alt="Close Modal" />
+          <div className="modal-close" onClick={() => setModal("")}>
+            <i class="bi bi-x"></i>
           </div>
         </div>
-        <div className="modal-content">{url}</div>
+        <iframe
+          className="modal-content"
+          src={url}
+          title="description"
+        ></iframe>
       </div>
     </div>
   );

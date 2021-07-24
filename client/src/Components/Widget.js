@@ -1,7 +1,8 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { GamesContext } from "../Context/GamesContext";
 export default function Widget(props) {
   const { name, description, type, thumbnail, url, release, tags } = props.game;
+  const { setModal } = useContext(GamesContext);
   return (
     <article className="widget">
       <div className="container-thumbnail">
@@ -10,6 +11,7 @@ export default function Widget(props) {
           style={{ backgroundImage: `url("${thumbnail}")` }}
           alt={description}
           title={name}
+          onClick={() => setModal(url)}
         />
         {tags.length !== 0 &&
           tags.map((item, index) => {
@@ -27,22 +29,24 @@ export default function Widget(props) {
       <div className="widget-info">
         <p class="title">{name}</p>
         <p>{description}</p>
-        <p>
+        <div className="minor-info">
           Game Type <br />
           <strong> {type}</strong>
-        </p>
-        <p>
+        </div>
+        <div className="minor-info">
           Release <br />
           <strong>
-            {" "}
             {new Date(release).toLocaleString("en-US", {
               day: "numeric",
               year: "numeric",
               month: "short",
             })}
           </strong>
-        </p>
-        <button className="try-it"> TRY IT! </button>
+        </div>
+        <button className="try-it" onClick={() => setModal(url)}>
+          {" "}
+          TRY IT!{" "}
+        </button>
       </div>
     </article>
   );

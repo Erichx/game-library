@@ -10,7 +10,7 @@ const request = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida ex turpis, a maximus neque volutpat id.",
     type: "SLOT GAMES",
     thumbnail: "https://picsum.photos/id/22/200",
-    url: "beat-ex",
+    url: "https://playmode.onetouch.io/demo/beatex",
     release: "Mon Oct 31 2021 00:00:00 GMT-0300",
     tags: ["popular"],
   },
@@ -20,7 +20,7 @@ const request = [
       "Pellentesque posuere consequat ornare ex vivamus varius sapiennec pellentesque. ",
     type: "SLOT GAME",
     thumbnail: "https://picsum.photos/id/12/200",
-    url: "/loot-or-boot",
+    url: "https://playmode.onetouch.io/demo/neon2077",
     release: "Mon Nov 29 2021 00:00:00 GMT-0300",
     tags: ["coming soon"],
   },
@@ -30,7 +30,7 @@ const request = [
       "Suspendisse hendrerit diam ac auctor accumsan. Donec blandit metus a diam dictum egestas non non erat.",
     type: "SLOT GAMES",
     thumbnail: "https://picsum.photos/id/25/200",
-    url: "bacarrat-supreme",
+    url: "https://playmode.onetouch.io/demo/www2120",
     release: "Mon Oct 22 2021 00:00:00 GMT-0300",
     tags: [],
   },
@@ -40,7 +40,7 @@ const request = [
       "Curabitur quis sollicitudin odio. Vivamus diam orci luctus varius sapien vitae ex lacinia efficitur. ",
     type: "ARCADE",
     thumbnail: "https://picsum.photos/id/43/200",
-    url: "/loot-or-boot",
+    url: "https://playmode.onetouch.io/demo/loot-or-boot/",
     release: "Mon Jan 25 2022 00:00:00 GMT-0300",
     tags: ["coming soon"],
   },
@@ -50,7 +50,7 @@ const request = [
       " Duis posuere consequat ornare varius sapien vitae ex  ex dui eu vulputate convallis",
     type: "ARCADE",
     thumbnail: "https://picsum.photos/id/75/200",
-    url: "bacarrat-supreme",
+    url: "https://playmode.onetouch.io/demo/flexing-dragons",
     release: "Mon Feb 10 2018 00:00:00 GMT-0300",
     tags: [],
   },
@@ -60,7 +60,7 @@ const request = [
       "Vestibulum ante ipsum primis  auctor accumsan in faucibus metus a diam orci luctus et lacinia  ultrices posuere",
     type: "SLOT GAMES",
     thumbnail: "https://picsum.photos/id/98/200",
-    url: "bacarrat-supreme",
+    url: "https://playmode.onetouch.io/demo/wildsorcery",
     release: "Mon Oct 22 2021 00:00:00 GMT-0300",
     tags: [],
   },
@@ -71,6 +71,7 @@ const App = () => {
   const [games, setGames] = useState([]);
 
   const [sortGames, setSortGames] = useState("");
+  const [modal, setModal] = useState();
 
   useEffect(() => {
     const sortArray = (type) => {
@@ -96,10 +97,12 @@ const App = () => {
 
   return (
     <>
-      <GamesContext.Provider value={{ games, setGames, setSortGames }}>
+      <GamesContext.Provider
+        value={{ games, setGames, setSortGames, modal, setModal }}
+      >
         <Header />
         <Content games={games} />
-        <Modal show="" toggle="" url="" />
+        {modal && <Modal url={modal} setModal={setModal} />}
       </GamesContext.Provider>
     </>
   );
