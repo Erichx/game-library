@@ -16,7 +16,8 @@ const request = [
   },
   {
     name: "Neon 2077",
-    description: "Pellentesque consequat ornare ex nec pellentesque. ",
+    description:
+      "Pellentesque posuere consequat ornare ex vivamus varius sapiennec pellentesque. ",
     type: "SLOT GAME",
     thumbnail: "https://picsum.photos/id/12/200",
     url: "/loot-or-boot",
@@ -36,7 +37,7 @@ const request = [
   {
     name: "Loot or Boot",
     description:
-      "Curabitur quis sollicitudin odio. Vivamus varius sapien vitae ex lacinia efficitur. ",
+      "Curabitur quis sollicitudin odio. Vivamus diam orci luctus varius sapien vitae ex lacinia efficitur. ",
     type: "ARCADE",
     thumbnail: "https://picsum.photos/id/43/200",
     url: "/loot-or-boot",
@@ -45,7 +46,8 @@ const request = [
   },
   {
     name: "FLEXING DRAGONS",
-    description: " Duis posuere dui eu vulputate convallis",
+    description:
+      " Duis posuere consequat ornare varius sapien vitae ex  ex dui eu vulputate convallis",
     type: "ARCADE",
     thumbnail: "https://picsum.photos/id/75/200",
     url: "bacarrat-supreme",
@@ -55,7 +57,7 @@ const request = [
   {
     name: "Wild Sorcery",
     description:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere",
+      "Vestibulum ante ipsum primis  auctor accumsan in faucibus metus a diam orci luctus et lacinia  ultrices posuere",
     type: "SLOT GAMES",
     thumbnail: "https://picsum.photos/id/98/200",
     url: "bacarrat-supreme",

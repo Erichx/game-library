@@ -66,6 +66,7 @@ div.select-container select {
   -moz-border-radius-topright: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  cursor: pointer;
 }
 .tag {
   border-radius: 6px;
@@ -91,6 +92,21 @@ div.select-container select {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.widget-info button {
+  background-color: white;
+  border: 1px solid #c1c1c1;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s ease-in;
+  cursor: pointer;
+}
+.widget-info button.try-it:hover {
+  background-color: #f4a600;
+  border: 1px solid #f4a600;
+  color: white;
 }
 
 /*media query for different devices */

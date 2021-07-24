@@ -31,8 +31,18 @@ export default function Widget(props) {
           Game Type <br />
           <strong> {type}</strong>
         </p>
-        <p>{url}</p>
-        <p>Release: {release}</p>
+        <p>
+          Release <br />
+          <strong>
+            {" "}
+            {new Date(release).toLocaleString("en-US", {
+              day: "numeric",
+              year: "numeric",
+              month: "short",
+            })}
+          </strong>
+        </p>
+        <button className="try-it"> TRY IT! </button>
       </div>
     </article>
   );
