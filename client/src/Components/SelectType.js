@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SelectType() {
   return (
-    <div>
+    <div className="select-container">
       <label htmlFor="type">Game Type</label>
 
       <select name="type" id="type">

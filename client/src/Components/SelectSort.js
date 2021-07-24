@@ -6,7 +6,7 @@ export default function SelectSort() {
   const { setSortGames } = useContext(GamesContext);
 
   return (
-    <div>
+    <div className="select-container">
       <label htmlFor="sort">Sort</label>
 
       <select onChange={(e) => setSortGames(e.target.value)}>

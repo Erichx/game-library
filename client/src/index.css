@@ -9,19 +9,33 @@ p {
   margin: 0.5rem 0rem;
 }
 
-.header {
-}
-
+.header,
 .content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.header {
+  justify-content: flex-end;
+}
+
+div.select-container {
+  padding: 1rem;
+}
+div.select-container select {
+  margin-left: 0.6rem;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+.content {
+  justify-content: space-between;
 }
 
 .widget {
