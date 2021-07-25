@@ -7,7 +7,7 @@ export default function Modal(props) {
       <div className="modal">
         <div className="modal-header">
           <div className="modal-close" onClick={() => setModal("")}>
-            <i class="bi bi-x"></i>
+            <i className="bi bi-x"></i>
           </div>
         </div>
         <iframe

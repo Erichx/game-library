@@ -34,9 +34,8 @@ div.select-container select {
   padding: 0.3rem;
   border-radius: 4px;
 }
-
 .content {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .widget {
@@ -93,11 +92,6 @@ div.select-container select {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.minor-info {
-  width: 50%;
-  display: inline-block;
 }
 
 .widget-info button {

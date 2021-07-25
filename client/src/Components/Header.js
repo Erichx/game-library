@@ -1,13 +1,13 @@
 import React from "react";
 
 import SelectSort from "./SelectSort";
-import SelectType from "./SelectType";
+import SelectFilter from "./SelectFilter";
 
 export default function Header() {
   return (
     <div className="header">
       <SelectSort />
-      <SelectType />
+      <SelectFilter />
     </div>
   );
 }
