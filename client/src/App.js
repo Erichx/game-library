@@ -22,7 +22,7 @@ const request = [
       "Pellentesque posuere consequat ornare ex vivamus varius sapiennec pellentesque. ",
     type: "Slot Game",
     thumbnail:
-      "https://mlqoms2zxd9u.i.optimole.com/UrZqcRI.dxpv~47ac7/w:1500/h:904/q:90/https://www.onetouch.io/wp-content/uploads/2020/09/1500x904px-OT_FlexingDragons_1500x904.jpg",
+      "https://mlqoms2zxd9u.i.optimole.com/UrZqcRI.dxpv~47ac7/w:1500/h:904/q:90/https://www.onetouch.io/wp-content/uploads/2020/08/Neon2077_1500x904.jpg",
     url: "https://playmode.onetouch.io/demo/neon2077",
     release: "Mon Nov 29 2021 00:00:00 GMT-0300",
     tags: ["coming soon"],
@@ -76,10 +76,28 @@ const request = [
 const App = () => {
   const [games, setGames] = useState([]);
   const [modal, setModal] = useState();
+  const [sortSelect, setSortSelect] = useState("asc");
 
   useEffect(() => {
     setGames(request);
   }, []);
+
+  function sorting(values, type) {
+    return values.sort((a, b) => {
+      switch (type) {
+        case "asc":
+          return a.name.localeCompare(b.name);
+        case "desc":
+          return b.name.localeCompare(a.name);
+        case "newest":
+          return new Date(b.release) - new Date(a.release);
+        case "oldest":
+          return new Date(a.release) - new Date(b.release);
+        default:
+          return null;
+      }
+    });
+  }
 
   return (
     <>
@@ -88,8 +106,11 @@ const App = () => {
           games,
           request,
           modal,
+          sortSelect,
           setModal,
           setGames,
+          setSortSelect,
+          sorting,
         }}
       >
         <Header />

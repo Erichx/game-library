@@ -3,26 +3,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { GamesContext } from "../Context/GamesContext";
 
 export default function SelectFilter() {
-  const { request, setGames } = useContext(GamesContext);
+  const { sorting, sortSelect, request, setGames } = useContext(GamesContext);
   const [optionTypes, setOptionTypes] = useState("");
-  const [filterGames, setFilterGames] = useState("");
-
-  useEffect(() => {
-    const filterArray = (type) => {
-      let filtered;
-      if (type === "all") {
-        filtered = request;
-      } else {
-        filtered = request
-          .filter((game) => game.type === type)
-          .map((filteredGame) => filteredGame);
-      }
-
-      setGames(filtered);
-    };
-
-    filterArray(filterGames);
-  }, [filterGames]);
 
   useEffect(() => {
     setOptionTypes(
@@ -36,11 +18,23 @@ export default function SelectFilter() {
     );
   }, [request]);
 
+  function filterAction(type) {
+    let filtered;
+    if (type === "all") {
+      filtered = request;
+    } else {
+      filtered = request
+        .filter((game) => game.type === type)
+        .map((filteredGame) => filteredGame);
+    }
+    setGames(sorting(filtered, sortSelect));
+  }
+
   return (
     <div className="select-container">
       <label htmlFor="type">Game Type</label>
 
-      <select onChange={(e) => setFilterGames(e.target.value)}>
+      <select onChange={(e) => filterAction(e.target.value)}>
         <option value="all">All Games</option>
         {Object.values(optionTypes).map((item, index) => {
           return (
