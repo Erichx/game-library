@@ -150,6 +150,42 @@ div.select-container select {
   height: 80vh;
 }
 
+.toast-notification {
+  box-sizing: border-box;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  display: flex;
+  width: calc(100% - 2rem);
+  height: auto;
+  padding: 0 0 0 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  border-left: 3px solid #fa4d56;
+  background: #393939;
+}
+.toast-notification .title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  margin-top: 1rem;
+  font-weight: 600;
+  word-break: break-word;
+}
+.toast-notification .subtitle {
+  font-size: var(--cds-body-short-01-font-size, 0.875rem);
+  font-weight: var(--cds-body-short-01-font-weight, 400);
+  line-height: var(--cds-body-short-01-line-height, 1.29);
+  letter-spacing: var(--cds-body-short-01-letter-spacing, 0.16px);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--cds-inverse-01, #fff);
+  word-break: break-word;
+}
+
 /*media query for different devices */
 @media (min-width: 200px) {
   .widget {
