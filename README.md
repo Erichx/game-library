@@ -1,5 +1,3 @@
-# game-library
-
 <h1 align="center">Game library</h1>
 <p align="center">A simple game library, created in react with pure CSS.</p>
 
