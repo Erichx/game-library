@@ -23,7 +23,7 @@ $npm start
 
 # to access back-end
 
-http://localhost:3001/
+http://localhost:3001/games
 
 # installing the front-end dependencies
 
@@ -36,4 +36,4 @@ $npm start
 
 # to access front-end
 
-http://localhost:3001/
+http://localhost:3000/

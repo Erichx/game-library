@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/gamesa`)
+      .get(`http://localhost:3001/games`)
       .then((res) => {
         setGames(res.data);
         setRequest(res.data);
