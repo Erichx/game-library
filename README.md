@@ -21,19 +21,19 @@ $ npm install
 
 $npm start
 
-# to access front-end
+# to access back-end
 
-http://localhost:3000/
+http://localhost:3001/
 
 # installing the front-end dependencies
 
-$ cd server
+$ cd client
 $ npm install
 
-# running the back-end
+# running the front-end
 
 $npm start
 
-# to access back-end
+# to access front-end
 
 http://localhost:3001/
