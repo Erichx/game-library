@@ -10,7 +10,7 @@ Also it's nice to have an editor to work with the code like [VSCode](https://cod
 
 Once you have the pre-requirements installed, you can open your bash and following the commands:
 
-<pre>$ git clone <https://github.com/Erichx/game-library></pre>
+<pre>$ git clone https://github.com/Erichx/game-library </pre>
 
 # installing the back-end dependencies
 
