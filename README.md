@@ -10,16 +10,16 @@ Also it's nice to have an editor to work with the code like [VSCode](https://cod
 
 Once you have the pre-requirements installed, you can open your bash and following the commands:
 
-$ git clone <https://github.com/Erichx/game-library>
+<pre>$ git clone <https://github.com/Erichx/game-library></pre>
 
 # installing the back-end dependencies
 
-$ cd server
-$ npm install
+<pre>$ cd server</pre>
+<pre>$ npm install</pre>
 
 # running the back-end
 
-$npm start
+<pre> $npm start</pre>
 
 # to access back-end
 
@@ -27,12 +27,12 @@ http://localhost:3001/games
 
 # installing the front-end dependencies
 
-$ cd client
-$ npm install
+<pre> $ cd client</pre>
+<pre> $ npm install</pre>
 
 # running the front-end
 
-$npm start
+<pre> $npm start </pre>
 
 # to access front-end
 
